@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<HEad>
+  <meta charset="UTF-8">
+  <meta name="description" content="Free survey form">
+  <meta name="keywords" content="HTML, CSS, JavaScript">
+  <meta name="author" content="charlotte divine">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="title"><h1>SURVEY FORM</h1></title>
+  </HEad>
+  <body>
+    <p id="description">fill the form below</p>
+     <form id="survey-form"action="/action_page.php" method="get">
+      <label id="name-label" for="name"> enter your name:</label>
+      <input type="text" id="name" name="name"placeholder="wilson"><br><br>
+      <label id="email-label" for="email">enter your email:</label>
+      <input type="email" id="email" name="email"placeholder="gaga@gmail.com"><br><br>
+      <label id="number-label" for="number">enter a number:</label>
+      <input type="number" id="number" name="number" min="0" max="10"placeholder="123-45-678"><br><br>
+
+       <label for="gender">Choose your gender:</label>
+
+         <select name="gender" id="dropdown">
+          <option value="female">female</option>
+          <option value="male">male</option>
+          <option value="none">i prefer not to say</option>
+        </select>
+         <p>please select your current age</p>
+          <input type="radio" id="age1" name="age" value="20">
+            <label for="age1">0-20</label><br>
+          <input type="radio" id="age2" name="age" value="40">
+           <label for="age2">31-40</label><br>
+          <input type="radio" id="age3" name="age" value="60">
+            <label for="age3">41-60</label>
+
+             <p>chose your place of residence</p>
+
+
+              <input type="checkbox" id="location1" name="location" value="kigali city">
+               <label for="location1"> kigali city</label><br>
+              <input type="checkbox" id="location2" name="location" value="southern province">
+               <label for="location2"> southern province</label><br>
+              <input type="checkbox" id="location3" name="location" value="eastern province">
+               <label for="location3"> eastern province</label><br>  
+
+               <label>any additional comment for the information provided above:</label>
+<div>
+               <textarea rows="4" cols="50">
+               </textarea>
+</div>
+
+             <button id="submit" type="submit" form="survey form" value="Submit">Submit</button>
+
+   
+</form>
+</body>
+</html>
